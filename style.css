@@ -2,7 +2,7 @@
 /* Variable */
 :root {
   /* Color */
-  --nav-color:#FFE0D7;
+  --nav-color:#ffe0d7c5;
   --nav-font:#FF9B92;
   --black-color: #212121;
   --gray-color: #424242;
@@ -39,6 +39,10 @@ button:hover {
   justify-content: space-between;
   padding: 10px var(--div-margin);
   font-size: 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
 }
 .nav_logo img {
   background-color: white;
@@ -71,8 +75,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px;
+  margin: 130px 100px;
   /* Backgroung img*/
+  z-index: 3;
 }
 .me_img img {
   width: 250px;
@@ -104,6 +109,7 @@ main {
   justify-content: center;
   margin-top: 150px;
   margin-bottom: 100px;
+  z-index: 2;
 }
 .like_title {
   margin-bottom: 20px;
@@ -126,7 +132,7 @@ main {
   position: relative;
   width: 300px;
   height: 300px;
-  display: inline-block
+  margin: 15px;
 }
 .overlay {
   position: absolute;
@@ -175,7 +181,7 @@ main {
   width: 100%;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 973px) {
   .nav_btn {
     display: block;
   }
@@ -191,5 +197,21 @@ main {
   .nav_btn {
     justify-content: flex-start;
   }
+  main {
+    margin-top: 160px;
+  }
+  .like {
+    display: flex;
+  }
+  .like_things{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media screen and (max-width: 617px) {
+  .like {
+    display: flex;
+    flex-direction: column;
+  }
 }
