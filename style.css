@@ -34,15 +34,15 @@ button:hover {
 
 /* Nav bar */
 .nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
   background-color: var(--nav-color);
   display: flex;
   justify-content: space-between;
   padding: 10px var(--div-margin);
   font-size: 25px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 5;
 }
 .nav_logo img {
   background-color: white;
